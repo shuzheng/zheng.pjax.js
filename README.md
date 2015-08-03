@@ -1,13 +1,13 @@
 <h2>zheng.pjax.js使用方法</h2>
-<pre>
+```js
 // 初始化插件
 $.pjax({
 	selector: 'a',
 	container: '#content'
 });
-</pre>
+```
 <h2>服务器端处理</h2>
-<pre>
+```java
 /**
  * 首页
  * @return
@@ -31,6 +31,6 @@ public View index() throws Exception {
 	}
 	return view;
 }
-</pre>
+```
 <h2>License</h2>
 <p>MIT</p>
