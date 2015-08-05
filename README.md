@@ -1,15 +1,15 @@
-<h2>zheng.pjax.js使用方法</h2>
+## How to use
 ```js
-// 初始化插件
+// init
 $.pjax({
 	selector: 'a',
 	container: '#content'
 });
 ```
-<h2>服务器端处理</h2>
+## server
 ```java
 /**
- * 首页
+ * index
  * @return
  * @throws Exception
  */
@@ -24,7 +24,7 @@ public View index() throws Exception {
 			log.info("ajax index");
 		} else {
 			view = new JspView("/pjax/pc/_public.jsp");
-			view.setAttribute("title", "首页");
+			view.setAttribute("title", "index");
 			view.setAttribute("action", "index");
 			log.info("index");
 		}
@@ -32,5 +32,5 @@ public View index() throws Exception {
 	return view;
 }
 ```
-<h2>License</h2>
-<p>MIT</p>
+## License
+MIT
