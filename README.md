@@ -6,7 +6,7 @@ $.pjax({
 	container: '#content'
 });
 ```
-## server
+## Server
 ```java
 /**
  * index
